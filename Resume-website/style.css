@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@import')
+
+:root{
+    --mainTextColor: #000;
+    --secondaryTextColor: (51 51 51 );
+    --mainLinkColor: hsl(188, 87%, 39%);
+    --mainBorderColor: rgb(218 218 218);
+    --mainBnColor: rgb(249 250 251);
+
+}
+
+*{
+    font-family: Readex Pro;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColor)
+}
+
+body{
+    background-color: var(--mainBnColor);
+}
+p, span, li{
+    color: var(--secondaryTextColor);
+    font-size: 1em;
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColor);
+    font-size: 500;
+
+}
+
+li{
+    line-height: 1.9em;
+
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+
+}
+
+#user--name{
+    font-size: 3em;
+    line-height: 1em;
+    
+}
+
+
+#bio, a{
+    font-weight: 300;
+}
+
+#profile-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#email{
+    color: var(--mainTextColor)
+}
+#socials--list{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a{
+    font-size: 0.9em;
+    color: var(--secondaryTextColor);
+    transition: 0.3s;
+}
+
+#socials--list a:hover{
+    color: var(--mainLinkColor);
+}
+
+#qualifications--list{
+    list-style: none;
+}
+
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColor);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+@media(max-width: 600px) {
+    #wrapper--hero
+    flex-direction: column;
+    
+}
+
+#profile-pic{
+    width: 200px;
+    height: 200px;
+
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+}
+
+*{
+    box-sizing: border-box;
+
+}
+
+/* style inputs*/
+imput[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[ type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+
+}
+
+input[type=submit] :hover{
+background-color: #45a049;
+
+}
+
+/* style the container/contact section*/
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+
+}
+
+/* Clear floats after the column*/
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other*/
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
